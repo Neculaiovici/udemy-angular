@@ -15,11 +15,16 @@
 -- String Interpolation vs Property Bindig
 
 ===================> Two-Way-Data Binding <=====================================
+- se foloseste cu [(ngModel)]="exProp" face update peste tot in DOM unde variabila este folosita
 
 
 
 
+===================> Directives <=====================================
+- sunt instructiuni pentru DOM 
+- directivele se impart in doua structuri:
+	* structurale (structural directive) adauga sau sterg elemente din DOM ca exemplu poti lua *ngIf, *ngFor 
+	* attribute directive schimba doar elementul unde este pusa directiva (ex. schimbare culoare)
 
-
-*** $event ***
-- este variabila rezarvata folosita pentru event binding, va fi data emisa de evenimentul de care este declansata
+- este variabila rezarvata folosita pentru event binding, va fi data emisa de evenimentul de care 
+ declansata
