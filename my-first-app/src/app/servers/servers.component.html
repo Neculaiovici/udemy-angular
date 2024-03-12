@@ -1,1 +1,31 @@
-<p>servers works!</p>
+<h1 class="text-center">Servers component</h1>
+<hr>
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-6">
+                <label>Server name</label>
+                <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+            </div>
+            <div class="col-6">
+                <p class="my-auto">Server name value: {{ serverName }}</p>
+            </div>
+            <div class="col-6">
+                <label>Server IP</label>
+                <input type="string" class="form-control" [(ngModel)]="serverIp">
+            </div>
+            <div class="col-6">
+                <p class="my-auto">Server ip value: {{ serverIp }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-6">
+        <button class="btn btn-primary m-4" [disabled]="!allowNewServer" (click)="onCreateServer()">
+            Add server
+        </button>
+        <p>String interpolation value: {{ allowNewServer }}</p>
+        <hr>
+        <p>{{ serverCreationStatus }}</p>
+        <app-server></app-server>
+    </div>
+</div>
