@@ -1,21 +1,33 @@
 <div class="jumbotron">
   <h1 class="col-12">work</h1>
 </div>
-<hr>
 <div class="container">
   <div class="row">
-    <div class="col-12">
-      <app-server></app-server>
-    </div>
     <div class="col-12">
       <app-servers></app-servers>
     </div>
     <hr>
-    <div class="col-6">
-      <app-warning></app-warning>
+    <div class="col-12  mt-5">
+      <h6 class="display-3 text-center">Alert components here!</h6>
+      <div class="row">
+        <div class="col-6">
+          <app-warning></app-warning>
+        </div>
+        <div class="col-6">
+          <app-succsess></app-succsess>
+        </div>
+      </div>
     </div>
-    <div class="col-6">
-      <app-succsess></app-succsess>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h1>Exercises</h1>
+    </div>
+    <div class="col-12">
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

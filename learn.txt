@@ -1,0 +1,20 @@
+====================> NG <=====================================
+
+===================> Module
+- bunddle all your component that you need 
+
+
+===================> Data binding
+- traducere mai simpla comunicare dintre codul de typescript(business logic) si template(html)
+- se poate folosi in doua moduri: 
+	* String Interpolation		ex.( {{ data }} ) -> returneaza tot timpul o stringa
+	* Property Binding		ex.( [property]=>"data" )
+
+-- String Interpolation vs Property Bindig
+
+
+
+
+
+*** $event ***
+- este variabila rezarvata folosita pentru event binding, va fi data emisa de evenimentul de care este declansata
