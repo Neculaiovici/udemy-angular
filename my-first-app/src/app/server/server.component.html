@@ -1,4 +1,8 @@
-<div class="card p-4 bg-primary">
-    <h4>{{ 'Server' }} with id {{ serverId }} is {{ serverStatus }}</h4>
+<div class="card p-4 bg-primary my-4">
+    <h4 
+        [ngStyle]="{backgroundColor: getColor()}"
+        [ngClass]="{online: serverStatus === 'online'}">
+        {{ 'Server' }} with id {{ serverId }} is {{ serverStatus }}</h4>
+        
     <p>Calling a method from ts file {{ getServerStatus() }}</p>
 </div>
