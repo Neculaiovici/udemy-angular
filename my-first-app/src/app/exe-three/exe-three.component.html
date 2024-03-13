@@ -1,0 +1,5 @@
+<div class="my-5">
+  <button class="btn btn-primary my-5" (click)="onToggleDetails()">Display details</button>
+  <p *ngIf="shwoSecret">Secret Password = tuna</p>
+  <div class="my-5" [ngStyle]="{backgroundColor: log >= 5 ? 'blue': 'white'}" *ngFor="let log of logs">{{log}}</div>
+</div>  

@@ -26,7 +26,11 @@
         <p>String interpolation value: {{ allowNewServer }}</p>
         <hr>
         <p>{{ serverCreationStatus }}</p>
-        <app-server></app-server>
+        <div class="row">
+            <div class="col-12">
+                <app-server *ngFor="let server of servers"></app-server>
+            </div>
+        </div>
     </div>
     <div class="col-6">
         <p>Directive</p>
